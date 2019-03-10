@@ -76,13 +76,14 @@ a:hover{
 #menu-bar{
     position: absolute;
     top:0;
-    right:100px;
+    /* right:100px; */
     z-index: 1;
 }
 
 #menu-bar ul li{
     display: inline-block;
     font-family: "Work Sans", Arial, sans-serif;
+    font-size:20px;
     padding: 10px;
     
 }
