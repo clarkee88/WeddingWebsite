@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/bromello-Regular.otf);
+  }
+
+/* body, html{
+    height: 100%;
+    width:100%;
+    margin: 0;
+} */
+
+a{
+    text-decoration: none;
+    color: lightgrey;
+}
+
+a:hover{
+    color: #fff;
+}
+
+#topImage{
+    position: relative;
+    background-image: url('../Img/IMG_6053.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 900px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    
+}
+
+#overlay {
+	z-index: 0;
+	position: absolute;
+	bottom:0;
+	top: 0;
+	left: 0;
+	right: 0;
+    background: rgba(0, 0, 0, 0.5);
+    
+}
+
+#top-text{
+    position: relative;
+    z-index: 1;
+    color:#fff;
+    /*border:3px solid white;*/
+    text-align: center;
+    
+}
+
+#top-text h1{
+    /* font-family: 'Sacramento', cursive;  */
+    font-family: 'myFirstFont';
+    font-size: 100px;
+    font-weight: 400;
+    margin:0;
+    padding: 0;
+}
+
+#top-text h2{
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom:20px;
+    padding: 0;
+}
+
+#menu-bar{
+    position: absolute;
+    top:0;
+    right:100px;
+    z-index: 1;
+}
+
+#menu-bar ul li{
+    display: inline-block;
+    font-family: "Work Sans", Arial, sans-serif;
+    padding: 10px;
+    
+}
+
+#date-time-section{
+    padding-top:40px;
+    padding-bottom:20px;
+    width: 100%;
+    background-color:#f6f6f6;
+    /* background-image: url('../Img/gradient-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center; */
+
+}
+
+#date-time-box{
+    border:3px solid #f7d0cb;
+    text-align: center;
+    padding:20px;
+    margin-bottom:20px;
+    height:400px;
+}
+
+#date-time-box h1{
+    font-family: 'myFirstFont';
+    font-size: 4.375rem;
+    border-bottom: 1px solid #000;
+    margin-bottom: 20px;
+}
+
+#venue-section{
+    position:relative;
+    padding-top:40px;
+    padding-bottom:40px;
+    background-image: url('../Img/shustoke.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width:100%;    
+}
+
+#venue-box{
+    border:3px solid #000;
+    background-color: rgba(0, 8, 28, 0.4);
+    text-align: center;
+    padding:20px;
+    height:400px;
+    color: #fff;
+}
+
+#map-and-hotel-section{
+    padding:40px;
+}
+
+#map-box{
+    border:3px solid #000;
+    text-align: center;
+    padding:20px;
+    margin-bottom:20px;
+    height:400px;
+}
+
+#hotel-box{
+    border:3px solid #000;
+    text-align: center;
+    padding:20px;
+    margin-bottom:20px;
+    height:400px;
+}
+
+
+
+
