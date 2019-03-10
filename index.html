@@ -13,6 +13,9 @@
     <!-- Animate On Scroll -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+    <!-- Flipclock -->
+    <link rel="stylesheet" href="css/flipclock.css">
+
     <title>#TillDeathDoUsClarke</title>
     
 </head>
@@ -32,7 +35,10 @@
         <div id="top-text">
             <h1>Elliott & louise</h1>
             <h2>We Are Getting Married </h2>
-        </div>   
+        </div> 
+        <div id=ClockContainer>
+            <div class="clock"></div>
+        </div>
     </div> <!--topImage-->
 
 
@@ -121,6 +127,25 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
     AOS.init();
+    </script>
+
+    <!-- Flipclock -->
+    <script src="js/flipclock.js"></script>
+    <script type="text/javascript">
+        var clock;
+        $(document).ready(function() {
+            // Grab the current date
+            var currentDate = new Date();
+            // Set some date in the future. In this case, it's always Jan 1
+            var futureDate  = new Date(currentDate.getFullYear() + 1, 0, 1);
+            // Calculate the difference in seconds between the future and current date
+            var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+            // Instantiate a coutdown FlipClock
+            clock = $('.clock').FlipClock(diff, {
+                clockFace: 'DailyCounter',
+                countdown: true
+            });
+        });
     </script>
 </body>
 </html>
