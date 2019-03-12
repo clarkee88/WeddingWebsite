@@ -70,13 +70,13 @@ a:hover{
     font-family: "Work Sans", Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    margin-bottom:50px;
+    margin-bottom:70px;
     padding: 0;
 }
 
 #menu-bar{
     position: absolute;
-    top:0;
+    top:20px;
     /* right:100px; */
     z-index: 1;
 }
@@ -91,6 +91,21 @@ a:hover{
 
 #ClockContainer{
     position: relative;
+}
+
+#SwirlsAndDate{
+    position: relative;
+    margin-top: 50px;
+    
+}
+
+#DateText{
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size:30px;
+    color: #f7d0cb;
 }
 
 #date-time-section{
