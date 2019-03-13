@@ -21,6 +21,12 @@ a:hover{
     color: #fff;
 }
 
+iframe{
+    height: 400px;
+    width: 100%;
+    display: block;
+}
+
 #topImage{
     position: relative;
     background-image: url('../Img/IMG_6053.jpg');
@@ -109,15 +115,27 @@ a:hover{
 }
 
 #date-time-section{
-    padding-top:40px;
-    padding-bottom:20px;
+    padding-top:112px;
+    padding-bottom:92px;
     width: 100%;
-    background-color:#f6f6f6;
+    background-color:rgba(0, 0, 0, 0.04);
     /* background-image: url('../Img/gradient-background.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center; */
 
+}
+
+#date-time-title{
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+#date-time-title h1{
+    font-family: 'myFirstFont';
+    font-size: 4.375rem;
+    margin-bottom: 40px;
+    color: #f7d0cb;
 }
 
 #date-time-box{
@@ -135,10 +153,20 @@ a:hover{
     margin-bottom: 20px;
 }
 
+#date-time-column P{
+    font-family: "Work Sans", Arial, sans-serif;
+    margin-bottom: 0;
+}
+
+#date-time-text {
+    margin-top:50px;
+    font-family: "Work Sans", Arial, sans-serif;
+}
+
 #venue-section{
     position:relative;
-    padding-top:40px;
-    padding-bottom:40px;
+    padding-top:112px;
+    padding-bottom:112px;
     background-image: url('../Img/shustoke.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -149,6 +177,7 @@ a:hover{
 
 #venue-box{
     border:3px solid #000;
+    border-radius: 30px;
     background-color: rgba(0, 8, 28, 0.4);
     text-align: center;
     padding:20px;
@@ -156,14 +185,30 @@ a:hover{
     color: #fff;
 }
 
+#venue-box h1{
+    font-family: 'myFirstFont';
+    font-size: 4.375rem;
+    border-bottom: 1px solid #fff;
+    margin-bottom: 40px;
+
+}
+
+#venue-box P{
+    font-family: "Work Sans", Arial, sans-serif;
+    font-size:20px;
+}
+
 #map-and-hotel-section{
-    padding:40px;
+    padding-top:112px;
+    padding-bottom: 112px;
+    width:100%;
+    background-color:rgba(0, 0, 0, 0.04);
 }
 
 #map-box{
-    border:3px solid #000;
+    /* border:3px solid #000; */
     text-align: center;
-    padding:20px;
+    /* padding:20px; */
     margin-bottom:20px;
     height:400px;
 }
