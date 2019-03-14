@@ -165,14 +165,14 @@ iframe{
 
 #venue-section{
     position:relative;
-    padding-top:112px;
-    padding-bottom:112px;
+    padding-top:150px;
+    padding-bottom:150px;
     background-image: url('../Img/shustoke.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    width:100%;    
+    width:100%;  
 }
 
 #venue-box{
@@ -214,11 +214,46 @@ iframe{
 }
 
 #hotel-box{
-    border:3px solid #000;
+    /* border:3px solid #000; */
     text-align: center;
-    padding:20px;
+    /* padding:20px; */
     margin-bottom:20px;
     height:400px;
+}
+
+.carousel-item {
+    height:400px;
+}
+
+#hotelImage1{
+    background-image: url('../Img/hotel1.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover !important;   
+    background-position: center !important;
+}
+
+#hotelImage2{
+    background-image: url('../Img/hotel2.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover !important;   
+    background-position: center !important;
+}
+
+#hotelImage3{
+    background-image: url('../Img/hotel3.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover !important;   
+    background-position: center !important;
+}
+
+.carousel-caption{
+    background-color: rgba(0, 8, 28, 0.4);
 }
 
 
