@@ -1,3 +1,4 @@
+// Images for venue section slideshow
 var images = [
     "Img/shustoke.jpg",
     "Img/shustoke2.jpg",
