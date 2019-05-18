@@ -188,18 +188,39 @@
             <div class="row justify-content-left">
               <div class="col-md-6" id="rsvp-box" data-aos="zoom-in" data-aos-duration="1000">
                     <form>
-                            <div class="form-group">
-                              <label for="exampleInputEmail1">Email address</label>
-                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <div class="row">    
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="InputName">Name</label>
+                                    <input type="text" class="form-control" id="InputName" placeholder="Enter your name">
+                                </div>
                             </div>
-                            <div class="form-group">
-                              <label for="exampleInputPassword1">Password</label>
-                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            <div class="col">
+                                <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                </div>
                             </div>
-                            <button type="submit" class="btn btn-primary">Attending</button>
-                            <button type="submit" class="btn btn-primary">Can't make it</button>
-                          </form>
-                          <div class="tilted-box"></div>
+                        </div>
+                        <div class="form-group center-radio-buttons">
+                            <div class="custom-control custom-radio custom-control-inline">  
+                                    <input type="radio" class="custom-control-input" id="attending" name="customRadioInline1">  
+                                    <label class="custom-control-label" for="attending">Attending</label>  
+                            </div>
+                            <div class="custom-control custom-radio custom-control-inline">  
+                                    <input type="radio" class="custom-control-input" id="notAttending" name="customRadioInline1">  
+                                    <label class="custom-control-label" for="notAttending">Not Attending</label>  
+                            </div>
+                        </div>
+                        <div class="form-group">
+                                <label for="Message">Message</label>
+                                <textarea class="form-control" id="Message" rows="3"></textarea>
+                              </div>
+                        <div>
+                            <button type="submit" class="btn btn-light">Submit</button>
+                        </div>
+                        
+                    </form>
               </div>
             </div>
               
