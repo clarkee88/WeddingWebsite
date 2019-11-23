@@ -86,6 +86,8 @@ iframe{
     top:20px;
     /* right:100px; */
     z-index: 1;
+    width:100%;
+    text-align: center;
 }
 
 #menu-bar ul li{
@@ -94,6 +96,10 @@ iframe{
     font-size:20px;
     padding: 10px;
     
+}
+
+.navbar-toggle{
+    display:none;
 }
 
 #ClockContainer{
@@ -379,6 +385,19 @@ iframe{
     text-align: center;
     font-family: "Work Sans", Arial, sans-serif;
     font-size:10px;
+}
+
+@media screen and (max-width: 768px){
+    .navbar-toggle{
+        display: inline;
+        position: absolute;
+        right:20px;
+        color:#fff;
+    }
+
+    .main-nav{
+        display:none;
+    }
 }
 
 
