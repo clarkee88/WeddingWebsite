@@ -109,15 +109,76 @@
 
     <!-- Venue section     -->
     <div id="venue-section">
-        <div id="overlay"></div>
-    <div class="container">
+        <div id="overlay-venue"></div>
+    <div class="container" id="venue-container">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs justify-content-center" id="venue-Tab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="venue-tab" data-toggle="tab" href="#venue" role="tab" aria-controls="venue" aria-selected="true">Venue</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="orderoftheday-tab" data-toggle="tab" href="#orderoftheday" role="tab" aria-controls="orderoftheday" aria-selected="false">Order Of The Day</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="menu-tab" data-toggle="tab" href="#menu" role="tab" aria-controls="menu" aria-selected="false">Menu</a>
+            </li>
+          </ul>
+
             <div class="row justify-content-center">
               <div class="col-md-8" id="venue-box" data-aos="zoom-in" data-aos-duration="1000">
-                  <h1>Venue</h1>
+                  <!-- <h1>Venue</h1>
                   <P>Shustoke Barn</P>
                   <P>Coleshill Road, Shustoke</P>
                   <P>Coleshill</P>
-                  <P>B46 2BL</P>
+                  <P>B46 2BL</P> -->
+                  <!-- Tab panes -->
+                    <div class="tab-content">
+                            <div class="tab-pane active" id="venue" role="tabpanel" aria-labelledby="venue-tab">
+                                <p><img class="venue-icons" src="Img/church.svg"></img></p>
+                                <P>Shustoke Barn</P>
+                                <P>Coleshill Road, Shustoke</P>
+                                <P>Coleshill</P>
+                                <P>B46 2BL</P>
+                                <P><a href="http://www.crippsandco.com/shustoke-barn">www.crippsandco.com/shustoke-barn</a></P></div>
+                            <div class="tab-pane" id="orderoftheday" role="tabpanel" aria-labelledby="orderoftheday-tab">
+                                    <div class="container">
+                                            <div class = "row">
+                                                <div class = "col" id="date-time-column">
+                                                    <img class="venue-icons" src="Img/weddingrings.svg"></img>
+                                                    <P>Ceremony</P>
+                                                    <P>2:00pm</P>
+                                                </div>
+                                                <div class = "col" id="date-time-column">
+                                                    <img class="venue-icons" src="Img/drinks.svg"></img>
+                                                    <P>Drinks reception & Canapes</P>
+                                                    <P>2:30 PM</P>
+                                                </div>
+                                                <div class = "col" id="date-time-column">
+                                                        <img class="venue-icons" src="Img/cutlery.svg"></img>
+                                                        <P>Wedding Breakfast</P>
+                                                        <P>4:00 PM</P>
+                                                </div>
+                                            </div>
+                                            <div class = "row" id="venue-ootd-row2">
+                                                    <div class = "col" id="date-time-column">
+                                                        <img class="venue-icons" src="Img/microphone.svg"></img>
+                                                        <P>Speeches</P>
+                                                        <P>6:00 PM</P>
+                                                    </div>
+                                                    <div class = "col" id="date-time-column">
+                                                        <img class="venue-icons" src="Img/guitar.svg"></img> 
+                                                        <P>Evening Reception</P>
+                                                        <P>7:00 PM</P>
+                                                    </div>
+                                                    <div class = "col" id="date-time-column">
+                                                            <img class="venue-icons" src="Img/pizza.svg"></img> 
+                                                            <P>Evening food</P>
+                                                            <P>8:00 PM</P>
+                                                    </div>
+                                                </div>
+                                        </div></div>
+                            <div class="tab-pane" id="menu" role="tabpanel" aria-labelledby="menu-tab">Menu</div>
+                        </div>
               </div>
             </div>
               
