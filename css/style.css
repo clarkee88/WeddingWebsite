@@ -94,8 +94,8 @@ iframe{
 }
 
 #menu-bar{
-    position: absolute;
-    top:20px;
+    /* position: absolute;
+    top:20px; */
     /* right:100px; */
     z-index: 1;
     width:100%;
@@ -219,7 +219,7 @@ iframe{
     background-position: center center;
     background-attachment: fixed;
     width:100%; 
-    transition: background-image 1s linear;
+    transition: background-image 1s ease-in-out;
     z-index: 0;
 }
 
@@ -231,7 +231,7 @@ iframe{
 #venue-box{
     /* border:3px solid #000; */
     /* border-radius: 30px; */
-    background-color: rgba(0, 8, 28, 0.4);
+    /* background-color: rgba(0, 8, 28, 0.4); */
     text-align: center;
     padding:30px;
     height:400px;
