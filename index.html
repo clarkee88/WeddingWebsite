@@ -26,12 +26,12 @@
         <div id="overlay"></div>
         <div id="menu-bar">
                 <div class="navbar-toggle" id="js-navbar-toggle">
-                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-bars fa-lg"></i>
                 </div>
             <ul class = "main-nav">
                 <li><a href="#">Home</a></li>
                 <li><a href="#venue-section">Venue</a></li>
-                <li><a href="#map-and-hotel-section">Where to stay</a></li>
+                <li><a href="#map-and-hotel-section">Accommodation</a></li>
                 <li><a href="#rsvp-section">RSVP</a></li>
                 
             </ul>
@@ -41,6 +41,7 @@
             <h2>We Are Getting Married!</h2>
         </div> 
         <div id=ClockContainer>
+            <div class="clock-days"></div>
             <div class="clock"></div>
         </div>
         <div id="SwirlsAndDate">
@@ -112,7 +113,7 @@
         <div id="overlay-venue"></div>
     <div class="container" id="venue-container">
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs justify-content-center" id="venue-Tab" role="tablist">
+    <ul class="nav nav-tabs justify-content-center" id="venue-Tabs" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" id="venue-tab" data-toggle="tab" href="#venue" role="tab" aria-controls="venue" aria-selected="true">Venue</a>
             </li>
@@ -124,8 +125,8 @@
             </li>
           </ul>
 
-            <div class="row justify-content-center">
-              <div class="col-md-8" id="venue-box" data-aos="zoom-in" data-aos-duration="1000">
+            <div class="row justify-content-center" id="venue-row">
+              <div class="col-md-8" id="venue-box" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
                   <!-- <h1>Venue</h1>
                   <P>Shustoke Barn</P>
                   <P>Coleshill Road, Shustoke</P>
@@ -187,8 +188,8 @@
 
      <!-- Map and hotel section -->
     <Section id="map-and-hotel-section">
-            <div id = date-time-title>
-                    <h1>Where to stay</h1>
+            <div id = accommodation-title>
+                    <h1>Accommodation</h1>
                 </div>
             <div class="container-fluid">
                     <div class="row justify-content-around">
@@ -251,7 +252,7 @@
             </div>
         <div class="container">
             <div class="row justify-content-left">
-              <div class="col-md-6" id="rsvp-box" data-aos="zoom-in" data-aos-duration="1000">
+              <div class="col-md-6" id="rsvp-box" data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
                     <form>
                         <div class="row">    
                             <div class="col">
@@ -278,7 +279,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                                <label for="Message">Message</label>
+                                <label for="Message">Leave us a message / Song requests</label>
                                 <textarea class="form-control" id="Message" rows="3"></textarea>
                               </div>
                         <div>
@@ -293,7 +294,7 @@
     </Section>
 
     <Section id="footer-section">
-        <div id=hashtag-title data-aos="zoom-in" data-aos-duration="1000" >
+        <div id=hashtag-title data-aos="zoom-in" data-aos-duration="1000" data-aos-once="true">
             <P><i class="fab fa-instagram"></i></P>
             <h1><span id="hash">#</span>TillDeathDoUsClarke</h1>
         </div>
@@ -331,6 +332,22 @@
             var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
             // Instantiate a coutdown FlipClock
             clock = $('.clock').FlipClock(diff, {
+                clockFace: 'DailyCounter',
+                countdown: true
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        var clock2;
+        $(document).ready(function() {
+            // Grab the current date
+            var currentDate = new Date();
+            // Set some date in the future. In this case, it's 24th May 2020
+            var futureDate  = new Date(2020, 4, 24);
+            // Calculate the difference in seconds between the future and current date
+            var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
+            // Instantiate a coutdown FlipClock
+            clock2 = $('.clock-days').FlipClock(diff, {
                 clockFace: 'DailyCounter',
                 countdown: true
             });
