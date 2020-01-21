@@ -476,6 +476,10 @@ iframe{
     .clock-days{
         display: block;
     }
+
+    #topImage{
+        background-attachment: scroll;
+    }
 }
 
 
