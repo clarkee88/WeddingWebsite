@@ -478,7 +478,8 @@ iframe{
     }
 
     #topImage{
-        background-size: auto;
+        background-position: left top;
+        background-attachment: scroll;
     }
 }
 

@@ -32,3 +32,20 @@ setInterval(function() {
 //     alert('Thanks for the email, we\'ll be in touch promptly.');
 //     return false;
 // });
+
+//Fix for paralex effect on Iphone
+function myFunction(x) {
+  if (x.matches) { // If media query matches
+    $(window).scroll(function() {
+      var scrolledY = $(window).scrollTop();
+      $('#topImage').css('background-position', 'left ' + ((scrolledY)) + 'px');
+    });
+  } 
+}
+
+var x = window.matchMedia("(max-width: 499px)")
+myFunction(x) // Call listener function at run time
+x.addListener(myFunction) // Attach listener function on state changes 
+
+
+
