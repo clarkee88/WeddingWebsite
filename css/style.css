@@ -454,6 +454,10 @@ iframe{
     .main-nav{
         display:none;
     }
+
+    #topImage{
+        background-attachment: scroll;
+    }
 }
 
 @media screen and (max-width: 375px){
@@ -477,10 +481,6 @@ iframe{
         display: block;
     }
 
-    #topImage{
-        background-position: left top;
-        background-attachment: scroll;
-    }
 }
 
 

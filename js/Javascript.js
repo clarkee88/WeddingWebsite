@@ -19,33 +19,20 @@ setInterval(function() {
       }
 }, 5000);
 
-// var message = "";
-
-// $("#sendMessage").on("click", function() {
-//     message = $("#contactform").serialize();
-//     $.ajax({
-//         url: "//formspree.io/eclarke64@gmail.com", 
-//         method: "POST",
-//         data: {message: message},
-//         dataType: "json"
-//     });
-//     alert('Thanks for the email, we\'ll be in touch promptly.');
-//     return false;
-// });
 
 //Fix for paralex effect on Iphone
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-    $(window).scroll(function() {
-      var scrolledY = $(window).scrollTop();
-      $('#topImage').css('background-position', 'left ' + ((scrolledY)) + 'px');
-    });
-  } 
-}
+// function myFunction(x) {
+//   if (x.matches) { // If media query matches
+//     $(window).scroll(function() {
+//       var scrolledY = $(window).scrollTop();
+//       $('#topImage').css('background-position', 'left ' + ((scrolledY)) + 'px');
+//     });
+//   } 
+// }
 
-var x = window.matchMedia("(max-width: 499px)")
-myFunction(x) // Call listener function at run time
-x.addListener(myFunction) // Attach listener function on state changes 
+// var x = window.matchMedia("(max-width: 499px)")
+//myFunction(x) // Call listener function at run time
+//x.addListener(myFunction) // Attach listener function on state changes 
 
 
 
