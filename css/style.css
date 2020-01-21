@@ -458,6 +458,14 @@ iframe{
     #topImage{
         background-attachment: scroll;
     }
+
+    #venue-section{
+        background-attachment: scroll;
+    }
+    
+    #rsvp-section{
+        background-attachment: scroll;
+    }
 }
 
 @media screen and (max-width: 375px){
