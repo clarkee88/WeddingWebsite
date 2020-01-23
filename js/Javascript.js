@@ -42,6 +42,16 @@ $('#exampleModalCenter').on('hidden.bs.modal', function () {
 });
 
 
+//fade in/out attending options
+$("#customRadioInline1").on("click",function(){
+  $("#attendingOptions").fadeIn();
+})
+
+$("#customRadioInline2").on("click",function(){
+  $("#attendingOptions").fadeOut();
+})
+
+
 
 
 //Fix for paralex effect on Iphone

@@ -364,7 +364,7 @@ iframe{
     /* text-align: center; */
     padding:40px;
     margin-bottom:20px;
-    height:400px;
+    /* height:400px; */
     color: #fff;
     font-family: "Work Sans", Arial, sans-serif;
 }
@@ -406,6 +406,14 @@ iframe{
 }
 
 .center-radio-buttons{
+    text-align: center;
+}
+
+#attendingOptions{
+    display: none;
+}
+
+#submitBox{
     text-align: center;
 }
 

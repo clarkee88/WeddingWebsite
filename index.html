@@ -278,11 +278,18 @@
                                     <label class="custom-control-label" for="customRadioInline2">Not Attending</label>  
                             </div>
                         </div>
-                        <div class="form-group">
-                                <label for="Message">Leave us a message / Song requests</label>
+                        <div class="form-group" id="attendingOptions">
+                                <label for="DietryRequirements">Dietry Requirements</label>
+                                <textarea class="form-control" name="DietryRequirements" id="DietryRequirements" rows="1"></textarea>
+                                <label for="SongRequests">Song Requests</label>
+                                <textarea class="form-control" name="SongRequests" id="SongRequests" rows="1"></textarea>
+                              </div>
+                        
+                            <div class="form-group">
+                                <label for="Message">Leave us a message</label>
                                 <textarea class="form-control" name="Message" id="Message" rows="3"></textarea>
                               </div>
-                        <div>
+                        <div id="submitBox">
                             <button type="submit" id="sendMessage" class="btn btn-light">Submit</button>
                         </div>
                         
