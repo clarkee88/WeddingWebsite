@@ -409,6 +409,17 @@ iframe{
     text-align: center;
 }
 
+.modal-body{
+    text-align: center;
+    font-family: 'myFirstFont';
+    color: #f7d0cb;
+
+}
+
+.modal-footer{
+    justify-content: center;
+}
+
 #footer-section{
     padding-top:112px;
     padding-bottom: 112px;

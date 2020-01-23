@@ -33,8 +33,14 @@ $("#rsvpform").submit(function(e) {
   $.post($form.attr("action"), $form.serialize()).then(function() {
     //alert("Thank you!");
     $("#exampleModalCenter").modal();
+
   });
 });
+
+$('#exampleModalCenter').on('hidden.bs.modal', function () {
+  $('#rsvpform')[0].reset();
+});
+
 
 
 
