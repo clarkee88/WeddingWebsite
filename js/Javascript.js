@@ -19,6 +19,23 @@ setInterval(function() {
       }
 }, 5000);
 
+//fix for toggle options in form so they can have differnt names
+$("input[type=radio]").on("click",function(){   
+  $("input[type=radio]").prop("checked",false);
+   $(this).prop("checked",true);
+});
+
+//Form submission
+$("#rsvpform").submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Thank you!");
+  });
+});
+
+
 
 //Fix for paralex effect on Iphone
 // function myFunction(x) {
