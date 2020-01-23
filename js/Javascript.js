@@ -39,6 +39,7 @@ $("#rsvpform").submit(function(e) {
 
 $('#exampleModalCenter').on('hidden.bs.modal', function () {
   $('#rsvpform')[0].reset();
+  $("#attendingOptions").fadeOut();
 });
 
 
