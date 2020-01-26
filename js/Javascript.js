@@ -49,7 +49,8 @@ $(".hamburger-menu li a").on("click",function(){
 })
 
 //fix for toggle options in form so they can have differnt names
-$("input[type=radio]").on("click",function(){   
+$("input[type=radio]").on("click",function(){ 
+  $("#radio-button-validation").css("display", "none");  
   $("input[type=radio]").prop("checked",false);
    $(this).prop("checked",true);
 });
@@ -64,7 +65,7 @@ $("#rsvpform").submit(function(e) {
     if(!$("#customRadioInline2").prop("checked")) { 
       shouldSubmit = 0;
       $("#radio-button-validation").css("display", "block");
-      alert("Nothing checked!");
+      // alert("Nothing checked!");
     }
   }
 

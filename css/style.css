@@ -465,9 +465,14 @@ iframe{
 
 #radio-button-validation{
     display: none;
-    color:Red;
-    font-size: 15px; 
+    font-size: 15px;
+    font-family: "Work Sans", Arial, sans-serif;
+    text-align: center;
+    color: grey;
+    text-align: center;
+    background-color: #f7d0cb;
 }
+  
 
 #attendingOptions{
     display: none;
