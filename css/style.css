@@ -124,8 +124,7 @@ iframe{
     font-size:20px;
     /* padding: 10px; */
     z-index: 3;
-    /* background-color: rgba(0, 8, 28); */
-    background-color: black;
+    background-color: rgb(0,8,28);
     position: fixed;
     top:0px;
     right:0px;
