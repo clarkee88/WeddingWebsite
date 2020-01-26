@@ -1,23 +1,52 @@
 // Images for venue section slideshow
-var images = [
-    "Img/shustoke.jpg",
-    "Img/shustoke2.jpg",
-    "Img/shustoke3.jpg",
-    "Img/shustoke4.jpg",
-    "Img/shustoke5.jpg",
-    "Img/shustoke6.jpg",
-  ]
+// var images = [
+//     "Img/shustoke.jpg",
+//     "Img/shustoke2.jpg",
+//     "Img/shustoke3.jpg",
+//     "Img/shustoke4.jpg",
+//     "Img/shustoke5.jpg",
+//     "Img/shustoke6.jpg",
+//   ]
 
-var imageHead = document.getElementById("venue-section");
+// var imageHead = document.getElementById("venue-section");
 
-var i = 0;
-setInterval(function() {
-      imageHead.style.backgroundImage = "url(" + images[i] + ")";
-      i = i + 1;
-      if (i == images.length) {
-        i =  0;
-      }
-}, 5000);
+// var i = 0;
+// setInterval(function() {
+//       imageHead.style.backgroundImage = "url(" + images[i] + ")";
+//       i = i + 1;
+//       if (i == images.length) {
+//         i =  0;
+//       }
+// }, 5000);
+
+//backstretch
+$("#venue-section").backstretch([
+  "Img/shustoke.jpg"
+, "Img/shustoke2.jpg"
+, "Img/shustoke3.jpg"
+, "Img/shustoke4.jpg"
+, "Img/shustoke5.jpg"
+], {duration: 3000, fade: 750});
+
+//hamburger button
+$("#hamburger-button").on("click",function(){ 
+  $('.hamburger-menu').toggleClass('nav-active');
+  $("body").css("overflow", "hidden");
+
+})
+
+$("#close-menu-button").on("click",function(){ 
+  $('.hamburger-menu').toggleClass('nav-active');
+  $("body").css("overflow", "visible");
+
+})
+
+//hamburger menu links
+$(".hamburger-menu li a").on("click",function(){ 
+  $('.hamburger-menu').toggleClass('nav-active');
+  $("body").css("overflow", "visible");
+
+})
 
 //fix for toggle options in form so they can have differnt names
 $("input[type=radio]").on("click",function(){   
