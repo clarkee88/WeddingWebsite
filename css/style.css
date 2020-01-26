@@ -302,12 +302,15 @@ iframe{
     padding-top: 15px;
 }
 
-#venue-box h1{
+#venue-box h3{
     font-family: 'myFirstFont';
-    font-size: 4.375rem;
-    border-bottom: 1px solid #fff;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    /* border-bottom: 1px solid #fff; */
+}
 
+#menu P{
+    font-size: 15px !important;
+    line-height: 80%;
 }
 
 #venue-box P{
@@ -378,6 +381,15 @@ iframe{
 
 #hotelImage3{
     background-image: url('../Img/hotel3.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover !important;   
+    background-position: center !important;
+}
+
+#hotelImage4{
+    background-image: url('../Img/hotel4.jpg');
     height: 100%;
     width: 100%;
     background-repeat: no-repeat;
