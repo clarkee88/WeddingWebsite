@@ -58,12 +58,15 @@ $("input[type=radio]").on("click",function(){
 $("#rsvpform").submit(function(e) {
   e.preventDefault();
 
+  if($("input[type=radio]").prop("checked")) { 
+
   var $form = $(this);
   $.post($form.attr("action"), $form.serialize()).then(function() {
     //alert("Thank you!");
     $("#exampleModalCenter").modal();
 
   });
+  }else{alert("Nothing checked!"); }
 });
 
 $('#exampleModalCenter').on('hidden.bs.modal', function () {
