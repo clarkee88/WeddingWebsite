@@ -58,15 +58,25 @@ $("input[type=radio]").on("click",function(){
 $("#rsvpform").submit(function(e) {
   e.preventDefault();
 
-  if($("input[type=radio]").prop("checked")) { 
+  var shouldSubmit = 1;
 
+  if(!$("#customRadioInline1").prop("checked")) { 
+    if(!$("#customRadioInline2").prop("checked")) { 
+      shouldSubmit = 0;
+      alert("Nothing checked!");
+    }
+  }
+
+  if(shouldSubmit == 1){
   var $form = $(this);
   $.post($form.attr("action"), $form.serialize()).then(function() {
     //alert("Thank you!");
     $("#exampleModalCenter").modal();
 
   });
-  }else{alert("Nothing checked!"); }
+
+  }
+
 });
 
 $('#exampleModalCenter').on('hidden.bs.modal', function () {
