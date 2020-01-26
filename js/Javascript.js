@@ -63,6 +63,7 @@ $("#rsvpform").submit(function(e) {
   if(!$("#customRadioInline1").prop("checked")) { 
     if(!$("#customRadioInline2").prop("checked")) { 
       shouldSubmit = 0;
+      $("#radio-button-validation").css("display", "block");
       alert("Nothing checked!");
     }
   }
@@ -81,6 +82,7 @@ $("#rsvpform").submit(function(e) {
 
 $('#exampleModalCenter').on('hidden.bs.modal', function () {
   $('#rsvpform')[0].reset();
+  $("#radio-button-validation").css("display", "none");
   $("#attendingOptions").fadeOut();
 });
 

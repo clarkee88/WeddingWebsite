@@ -463,6 +463,12 @@ iframe{
     text-align: center;
 }
 
+#radio-button-validation{
+    display: none;
+    color:Red;
+    font-size: 15px; 
+}
+
 #attendingOptions{
     display: none;
 }
