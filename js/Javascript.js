@@ -32,20 +32,20 @@ $("#venue-section").backstretch([
 $("#hamburger-button").on("click",function(){ 
   $('.hamburger-menu').toggleClass('nav-active');
   $("body").css("overflow", "hidden");
-  stopBodyScrolling(true);
+  $("body").stopBodyScrolling(true);
 })
 
 $("#close-menu-button").on("click",function(){ 
   $('.hamburger-menu').toggleClass('nav-active');
   $("body").css("overflow", "visible");
-  stopBodyScrolling(false);
+  $("body").stopBodyScrolling(false);
 })
 
 //hamburger menu links
 $(".hamburger-menu li a").on("click",function(){ 
   $('.hamburger-menu').toggleClass('nav-active');
   $("body").css("overflow", "visible");
-  stopBodyScrolling(false);
+  $("body").stopBodyScrolling(false);
 })
 
 //prevent iphone scrolling when menu is active
