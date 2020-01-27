@@ -31,20 +31,24 @@ $("#venue-section").backstretch([
 //hamburger button
 $("#hamburger-button").on("click",function(){ 
   $('.hamburger-menu').toggleClass('nav-active');
-  $("body").css("overflow", "hidden");
-  $("body").css("touch-action", "none");
-  $("body").css("height", "100%");
+  $('body').toggleClass('no-scroll');
+  $('html').toggleClass('no-scroll');
+  // $("body").css("overflow", "hidden");
 })
 
 $("#close-menu-button").on("click",function(){ 
   $('.hamburger-menu').toggleClass('nav-active');
-  $("body").css("overflow", "visible");
+  // $("body").css("overflow", "visible");
+  $('body').toggleClass('no-scroll');
+  $('html').toggleClass('no-scroll');
 })
 
 //hamburger menu links
 $(".hamburger-menu li a").on("click",function(){ 
   $('.hamburger-menu').toggleClass('nav-active');
-  $("body").css("overflow", "visible");
+  // $("body").css("overflow", "visible");
+  $('body').toggleClass('no-scroll');
+  $('html').toggleClass('no-scroll');
 })
 
 //fix for toggle options in form so they can have differnt names

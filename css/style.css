@@ -29,6 +29,12 @@ iframe{
     display: block;
 }
 
+.no-scroll {
+    overflow: hidden;
+    height: 100%;
+    touch-action: none;
+    }
+
 #topImage{
     position: relative;
     background-image: url('../Img/IMG_6053.jpg');
