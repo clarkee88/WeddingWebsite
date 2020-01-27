@@ -33,6 +33,7 @@ $("#hamburger-button").on("click",function(){
   $('.hamburger-menu').toggleClass('nav-active');
   $("body").css("overflow", "hidden");
   $("body").css("touch-action", "none");
+  $("body").css("height", "100%");
 })
 
 $("#close-menu-button").on("click",function(){ 
