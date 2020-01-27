@@ -277,6 +277,7 @@ iframe{
     -moz-transition: background-image 1s ease-in-out;
     transition: background-image 1s ease-in-out; */
     z-index: 0;
+    min-height: 750px;
 }
 
 #venue-container a{
