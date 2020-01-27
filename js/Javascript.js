@@ -32,34 +32,19 @@ $("#venue-section").backstretch([
 $("#hamburger-button").on("click",function(){ 
   $('.hamburger-menu').toggleClass('nav-active');
   $("body").css("overflow", "hidden");
-  $("body").stopBodyScrolling(true);
+  $("body").css("touch-action", "none");
 })
 
 $("#close-menu-button").on("click",function(){ 
   $('.hamburger-menu').toggleClass('nav-active');
   $("body").css("overflow", "visible");
-  $("body").stopBodyScrolling(false);
 })
 
 //hamburger menu links
 $(".hamburger-menu li a").on("click",function(){ 
   $('.hamburger-menu').toggleClass('nav-active');
   $("body").css("overflow", "visible");
-  $("body").stopBodyScrolling(false);
 })
-
-//prevent iphone scrolling when menu is active
-function stopBodyScrolling (bool) {
-  if (bool === true) {
-      document.body.addEventListener("touchmove", freezeVp, false);
-  } else {
-      document.body.removeEventListener("touchmove", freezeVp, false);
-  }
-}
-
-var freezeVp = function(e) {
-  e.preventDefault();
-};
 
 //fix for toggle options in form so they can have differnt names
 $("input[type=radio]").on("click",function(){ 
