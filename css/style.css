@@ -3,7 +3,12 @@
 
 @font-face {
     font-family: myFirstFont;
-    src: url(../fonts/bromello-Regular.otf);
+    /* src: url(../fonts/bromello-Regular.otf); */
+    src: url(../fonts/bromello-Regular.eot);
+        src: url(../fonts/bromello-Regular.eot?#iefix) format('embedded-opentype'),
+             url(../fonts/bromello-Regular.woff) format('woff'),
+             url(../fonts/bromello-Regular.otf) format('opentype'),
+             url(../fonts/bromello-Regular.ttf) format('truetype');
   }
 
 /* body, html{
@@ -103,6 +108,7 @@ iframe{
 
 #menu-bar{
     position: absolute;
+    left:0px;
     top:20px;
     /* right:100px; */
     z-index: 1;
