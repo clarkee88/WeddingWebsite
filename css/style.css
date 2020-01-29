@@ -582,11 +582,16 @@ iframe{
     #accommodation-title h1{
         font-size: 4.0rem; 
     }
+
 }
 
-@media screen and (max-width: 412px){
+@media screen and (max-width: 414px){
     #DateText{
         font-size:23px;
+    }
+
+    #venue-section{
+        min-height: 890px;
     }
 }
 
@@ -598,6 +603,7 @@ iframe{
     .clock-days{
         display: block;
     }
+
 
 }
 
