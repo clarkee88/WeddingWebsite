@@ -96,14 +96,13 @@ iframe{
     font-weight: 400;
     margin:0;
     padding: 0;
-    margin-bottom:70px;
 }
 
 #top-text h2{
     font-family: "Work Sans", Arial, sans-serif;
     font-size: 20px;
     font-weight: 400;
-    /* margin-bottom:70px; */
+    margin-bottom:70px;
     padding: 0;
 }
 
