@@ -467,6 +467,10 @@
       padding-left: 106px;
     }
 
+    .flip-clock-wrapper{
+      margin-left: 0;
+    }
+
     .clock-days .flip-clock-divider.hours,
     .clock-days .flip-clock-divider.minutes,
     .clock-days .flip-clock-divider.seconds,
